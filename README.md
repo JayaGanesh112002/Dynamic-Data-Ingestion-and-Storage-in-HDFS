@@ -7,7 +7,8 @@ The task aims to fetch data from a specified link, store it in HDFS, and create 
 <h3>Basic Workflow : </h3>
 > The Shell script file (elt.sh) is dependent on the url.txt and queries.hql files. <br>
 > Once the shell script file has been executed the required files provided in the url.txt file will be donwloaded. <br>
-> Once downloaded, the files will be loaded into the HDFS for storage. <br>>> Then the queries.hql file will be executed to create a database and required table to load the data from HDFS. <br><br>
+> Once downloaded, the files will be loaded into the HDFS for storage. <br>
+> Then the queries.hql file will be executed to create a database and required table to load the data from HDFS. <br><br>
 
 > [!CAUTION]
 > <strong>Note : <br>
