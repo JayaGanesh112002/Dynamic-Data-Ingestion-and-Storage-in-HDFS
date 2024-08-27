@@ -1,6 +1,7 @@
 # wget command to get the file
-wget -r -nd -N -A "*.csv" -i "url.txt"
+wget -O 'nc-est2023-agesex-res.csv' -r -nd -N -A "*.csv" -i "url.txt"
 
+# -O : Store the downloaded data with the given file name
 # -r : Recrsive download
 # -nd : No directories to be created while downloading
 # -N : Timestamping 
