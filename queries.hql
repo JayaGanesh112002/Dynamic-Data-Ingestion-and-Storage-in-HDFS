@@ -18,10 +18,15 @@ CREATE TABLE popest2023(
     POPESTIMATE2023 BIGINT
 )
 ROW FORMAT DELIMITED
-FIELDS TERMINATED BY ',';
+FIELDS TERMINATED BY ','
+TBLPROPERTIES ("skip.header.line.count"="1");
 
 -- Load data into the table
 LOAD DATA LOCAL INPATH 'nc-est2023-agesex-res.csv' INTO TABLE popest2023;
+
+-- Setting the query result to print with column name
+set hive.cli.print.header=true;
+-- set hive.resultset.use.unique.column.names=false;
 
 -- Check if the data has been loaded
 SELECT * FROM popest2023;
